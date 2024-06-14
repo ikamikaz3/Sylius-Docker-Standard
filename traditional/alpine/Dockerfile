@@ -54,7 +54,7 @@ RUN apk update --no-cache && apk add --no-cache \
 
 RUN rm -rf /var/lib/apk/lists/* /tmp/* /var/tmp/* /usr/share/doc/* /usr/share/man/* /var/cache/apk/*
 
-RUN ln -s /usr/sbin/php-fpm8 /usr/sbin/php-fpm \
+RUN ln -s /usr/sbin/php-fpm81 /usr/sbin/php-fpm \
     && ln -s /usr/sbin/php81 /usr/sbin/php \
     && mkdir -p /run/php /var/log/php-fpm
 
